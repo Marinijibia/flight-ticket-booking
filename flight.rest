@@ -1,0 +1,30 @@
+
+GET http://127.0.0.1:9000/flight HTTP/1.1
+
+###
+GET http://127.0.0.1:9000/flight HTTP/1.1
+
+###
+POST http://127.0.0.1:9000/flight HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "flight to Saudi",
+    "time": "1pm",
+    "price": 37000,
+    "date": "27-06-2022"
+}
+
+###
+PUT http://127.0.0.1:9000/flight HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "flight to Nigeria",
+    "time": "2pm",
+    "price": 29000,
+    "date": "27-06-2022"
+}
+
+###
+DELETE http://127.0.0.1:9000/flight HTTP/1.1

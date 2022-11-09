@@ -1,17 +1,18 @@
 const express = require("express");
+
 const { json } = require("express");
-const flights = require("./controllers/flightController");
-const models = require("./models/Flight");
-const routes = require("./routes/flightRoute");
+
+const flight = require("./router/flightRoute");
 
 const app = express();
-
 app.use(json());
 
-app.use("/", routes);
+app.use("/flight", flight)
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 9000;
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.get("/", (req, res) => {
+    res.send("testing our flight app")
 });
+
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

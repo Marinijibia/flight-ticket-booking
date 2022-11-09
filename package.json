@@ -1,19 +1,15 @@
 {
-  "name": "book_flight",
+  "name": "testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Flight booking app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Umar Falalu",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
-    "mongoose": "^6.4.0",
-    "nodemon": "^2.0.16"
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
   }
 }
